@@ -13,7 +13,7 @@ app.use(express.static('public'))
 const path = require ('path');
 app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'views', 'home.html')));
 app.get('/register', (req, res) => res.sendFile(path.join(__dirname, 'views', 'detailProduct.html')));
-app.get('/cart', (req, res) => res.sendFile(path.join(__dirname, 'views', 'cart.html')));
+app.get('/carrito', (req, res) => res.sendFile(path.join(__dirname, 'views', 'cart.html')));
 app.get('/register', (req, res) => res.sendFile(path.join(__dirname, 'views', 'register.html')));
-app.get('/autentication', (req, res) => res.sendFile(path.join(__dirname, 'views', 'autentication.html')));
+app.get('/autenticacion', (req, res) => res.sendFile(path.join(__dirname, 'views', 'autentication.html')));
 
